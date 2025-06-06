@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Super Math Helper</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      text-align: center;
+      margin-top: 50px;
+    }
+    h1 {
+      color: #4caf50;
+    }
+    #games {
+      display: none;
+      margin-top: 40px;
+    }
+    .game-link {
+      display: block;
+      margin: 10px;
+      font-size: 20px;
+      color: #1a73e8;
+      text-decoration: none;
+    }
+    .game-link:hover {
+      text-decoration: underline;
+    }
+    #learn-button {
+      font-size: 20px;
+      padding: 10px 20px;
+      background-color: #4caf50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+    #learn-button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Super Math Helper</h1>
+  <p>Practice addition, subtraction, and multiplication here!</p>
+
+  <button id="learn-button">Learn</button>
+
+  <div id="games">
+    <h2>Secret Tools 🔓</h2>
+    <a class="game-link" href="https://poki.com">Poki Games //might not work</a>
+    <a class="game-link" href="https://www.coolmathgames.com/">Cool Math Games</a>
+    <a class="game-link" href="https://tetris.com/play-tetris">Play Tetris // might not work</a>
+<a class="game-link" href="https://www.msn.com/en-ca/play?cgfrom=cg_msn_pivot&cvid=817e6cab535c40a4955c22ba38cdb430"> play games // might not work</
+  </div>
+
+  <script>
+    document.getElementById("learn-button").addEventListener("click", function() {
+      document.getElementById("games").style.display = "block";
+      this.style.display = "none";
+    });
+  </script>
+
+</body>
+</html>
